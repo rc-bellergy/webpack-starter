@@ -1,5 +1,9 @@
 # Webpack5 strater
 
+Study Webpack5 follow the document:\
+https://webpack.docschina.org/guides/
+
+## Install
     npm install
 
 ## Build
@@ -10,7 +14,3 @@
 
 ## Server
     npm start
-
-## References:
-
-    https://webpack.docschina.org/guides/asset-management/
