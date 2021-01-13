@@ -1,7 +1,8 @@
-# Webpack5 strater
+# Webpack5 + Bootstrap4 strater
 
-Study Webpack5 follow the document:\
 https://webpack.docschina.org/guides/
+
+https://getbootstrap.com/docs/4.0/examples/starter-template/
 
 ## Install
     npm install

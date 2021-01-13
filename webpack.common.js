@@ -10,20 +10,31 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'My Page',
+      template: 'src/views/index.ejs'
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        include: path.resolve(__dirname, 'src'),
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
-        include: path.resolve(__dirname, 'src'),
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.ejs$/,
+        use: {
+          loader: 'ejs-compiled-loader',
+          options: {
+            htmlmin: true,
+            htmlminOptions: {
+              removeComments: true
+            }
+          }
+        }
+      }
     ],
   },
   output: {

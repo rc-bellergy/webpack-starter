@@ -1,5 +1,5 @@
-console.log('The print.js module has loaded! See the network tab in dev tools...');
+console.log('The another.js module has loaded!');
 
 export default () => {
-    console.log('Button Clicked: Here\'s "some text"!');
+    alert('Another js module loaded')
 };
