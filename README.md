@@ -1,4 +1,4 @@
-# Webpack5 + Bootstrap4 strater
+# Webpack 5 + Bootstrap 5 strater template
 
 https://webpack.docschina.org/guides/
 
