@@ -9,8 +9,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'My Page',
-      template: 'src/views/index.ejs'
+      title: 'Testing page',
+      template: 'src/views/index.ejs',
+      templateParameters: {
+        data: "Testing"
+      }
     }),
   ],
   module: {
