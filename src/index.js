@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.scss'
 
 function component () {
-    const element = document.getElementById('starter-template')
+    const element = document.createElement('div')
     const br = document.createElement('br')
 
     // Sample of using the imported module 'lodash'
@@ -27,4 +27,4 @@ function component () {
     return element
 }
 
-document.body.appendChild(component())
+document.getElementById('webpack-content').appendChild(component())
