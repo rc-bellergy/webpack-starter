@@ -3,6 +3,7 @@
 https://webpack.docschina.org/guides/
 
 https://getbootstrap.com/docs/5.0/examples/starter-template/
+https://getbootstrap.com/docs/5.0/examples/album/
 
 ## Install
     npm install

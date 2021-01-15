@@ -3,12 +3,14 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.scss'
 
+document.getElementById('webpack-content').appendChild(component())
+
 function component () {
     const element = document.createElement('div')
     const br = document.createElement('br')
 
     // Sample of using the imported module 'lodash'
-    element.innerHTML = _.join(['<h1>Webpack', 'Samples</h1>'], ' ')
+    element.innerHTML = _.join(['<h1 class="fw-light">Webpack', 'Samples</h1>'], ' ')
     element.appendChild(br)
 
     // Sample of getting the environment mode
@@ -27,4 +29,9 @@ function component () {
     return element
 }
 
-document.getElementById('webpack-content').appendChild(component())
+// const cardsData = [0,1,2,3,4,5,6,7,8]
+// const cardTmp = require('./views/blocks/card.ejs')
+// const cardsHolder = document.getElementById('cards')
+// cardsData.forEach(element => {
+//     cardsHolder.innerHTML += cardTmp()
+// });
