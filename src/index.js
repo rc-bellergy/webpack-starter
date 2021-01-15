@@ -20,7 +20,7 @@ function component () {
     const button = document.createElement('button')
     element.appendChild(button)
     button.innerHTML = 'Click me to load the another js module.'
-    button.onclick = e => import('./print').then(module => {
+    button.onclick = e => import('./another').then(module => {
         const print = module.default
         print()
     })
