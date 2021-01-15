@@ -8,7 +8,7 @@ function component () {
     const br = document.createElement('br')
 
     // Sample of using the imported module 'lodash'
-    element.innerHTML = _.join(['<h1>Hello', 'Webpack!</h1>'], ' ')
+    element.innerHTML = _.join(['<h1>Webpack', 'Samples</h1>'], ' ')
     element.appendChild(br)
 
     // Sample of getting the environment mode
