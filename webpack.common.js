@@ -7,10 +7,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Testing page',
+      title: 'CSS Study',
       template: 'src/views/index.ejs',
       templateParameters: {
-        data: [1,2,3,4,5,6]
+        // data: [1,2,3,4,5,6]
       },
     }),
   ],
