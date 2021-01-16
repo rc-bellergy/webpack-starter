@@ -1,3 +1,11 @@
+/* Override bootstrap default variables */
+/* node_modules/bootstrap/scss/_variables.scss */
+$body-bg: #eee;
+
+/* Import bootstrap style */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Custom Style */
 body {
   padding-top: 5rem;
 }

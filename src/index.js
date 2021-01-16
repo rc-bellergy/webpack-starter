@@ -1,6 +1,5 @@
 import _ from 'lodash'
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.scss'
 
 document.getElementById('webpack-content').appendChild(component())
