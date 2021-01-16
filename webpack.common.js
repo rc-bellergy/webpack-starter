@@ -3,15 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    page01: './src/page01/index.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Testing page',
-      template: 'src/views/index.ejs',
-      templateParameters: {
-        data: [1,2,3,4,5,6]
-      },
+      title: 'Page01',
+      template: './src/page01/index.ejs',
+      chunks: 'page01',
+      filename: 'page01.html'
     }),
   ],
   module: {
@@ -23,6 +22,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.ejs$/,
@@ -41,6 +44,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   optimization: {
     runtimeChunk: 'single',
