@@ -1,0 +1,9 @@
+/* Import bootstrap style */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/carousel";
+
+.carousel-item > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
