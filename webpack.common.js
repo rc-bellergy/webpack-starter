@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    home: './src/home/index.js',
+    index: './src/index/app.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'home',
-      template: './src/home/index.ejs',
-      chunks: ['home'],
-      filename: 'home.html'
+      title: 'index',
+      template: './src/index/template.ejs',
+      chunks: ['index'],
+      filename: 'index.html'
     }),
   ],
   module: {
