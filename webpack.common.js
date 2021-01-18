@@ -41,11 +41,6 @@ module.exports = {
       }
     ],
   },
-  output: {
-    filename: 'js/[name].bundle.[contenthash].js',
-    path: path.resolve(__dirname, 'dist/'),
-    assetModuleFilename: 'images/[name].[contenthash][ext]',
-  },
   optimization: {
     runtimeChunk: 'single',
     splitChunks: {
