@@ -42,9 +42,9 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[hash][ext][query]',
+    filename: 'js/[name].bundle.[contenthash].js',
+    path: path.resolve(__dirname, 'dist/'),
+    assetModuleFilename: 'images/[name].[contenthash][ext]',
   },
   optimization: {
     runtimeChunk: 'single',
